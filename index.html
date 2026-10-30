@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HomeMart - Furniture and home decor for every space.">
+  <title>HomeMart | Furniture & Decor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-strip">Big Home Days · Extra 10% off on your first order with code <b>WELCOME10</b></div>
+  <header class="site-header">
+    <div class="header-main">
+      <a class="brand" href="#" aria-label="HomeMart home"><span class="brand-mark">⌂</span><span>Home<span class="brand-accent">Mart</span><small>FURNITURE & DECOR</small></span></a>
+      <form class="search-wrap" id="searchForm">
+        <span>⌕</span><input id="searchInput" type="search" placeholder="Search for sofas, beds, lamps and more..." autocomplete="off">
+        <button type="submit">Search</button>
+      </form>
+      <div class="header-actions">
+        <button class="text-action" id="accountBtn">♙ <span>Account</span></button>
+        <button class="text-action" id="wishlistBtn">♡ <span>Wishlist</span><i id="wishCount">0</i></button>
+        <button class="cart-action" id="cartBtn">🛒 <span>Cart</span><b id="cartCount">0</b></button>
+      </div>
+    </div>
+    <nav class="category-nav" id="categoryNav">
+      <button class="nav-link active" data-category="all">All</button>
+      <button class="nav-link" data-category="living-room">Living Room</button>
+      <button class="nav-link" data-category="bedroom">Bedroom</button>
+      <button class="nav-link" data-category="dining-kitchen">Dining & Kitchen</button>
+      <button class="nav-link" data-category="office-decor">Office & Decor</button>
+      <button class="nav-link" data-category="deals">Today's Deals</button>
+      <button class="nav-link" data-category="new">New Arrivals</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE ART OF LIVING WELL</p>
+        <h1>Make room for<br><em>beautiful living.</em></h1>
+        <p>Thoughtfully designed furniture that makes every corner feel like home.</p>
+        <button class="primary-btn" id="shopNow">Explore collection <span>→</span></button>
+        <div class="hero-note"><span>✦</span> Up to 40% off · Free delivery on selected items</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-circle"></div>
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1000&q=85" alt="Warm modern living room sofa">
+        <div class="hero-tag"><b>New season</b><span>Comfort, reimagined.</span></div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><span>🚚</span><p><b>Free delivery</b><small>On selected orders</small></p></div>
+      <div><span>↺</span><p><b>Easy 7-day returns</b><small>Shop with confidence</small></p></div>
+      <div><span>♧</span><p><b>Quality assured</b><small>Made for everyday living</small></p></div>
+      <div><span>☏</span><p><b>Help when you need it</b><small>Friendly customer support</small></p></div>
+    </section>
+
+    <section class="section category-section">
+      <div class="section-heading"><div><p class="eyebrow">SHOP BY SPACE</p><h2>Find your kind of comfort</h2></div><button class="link-btn" data-show-all>View all categories →</button></div>
+      <div class="category-cards">
+        <button class="category-card" data-category="living-room"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80" alt=""><span>Living Room</span><small>Sofas, tables & more</small></button>
+        <button class="category-card" data-category="bedroom"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=600&q=80" alt=""><span>Bedroom</span><small>Beds, wardrobes & more</small></button>
+        <button class="category-card" data-category="dining-kitchen"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=600&q=80" alt=""><span>Dining & Kitchen</span><small>Gather around in style</small></button>
+        <button class="category-card" data-category="office-decor"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=600&q=80" alt=""><span>Office & Decor</span><small>Work, create & unwind</small></button>
+      </div>
+    </section>
+
+    <section class="promo-banner">
+      <div><p class="eyebrow">A LITTLE MORE LOVELY</p><h2>Refresh your space.<br>Save a little more.</h2><p>Discover handpicked pieces for a home you love.</p><button class="light-btn" id="dealsBtn">Shop the offers →</button></div>
+      <div class="promo-visual"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85" alt="Minimal home decor"></div>
+      <span class="discount-stamp">UP TO<br><b>40%</b><br>OFF</span>
+    </section>
+
+    <section class="section products-section" id="productsSection">
+      <div class="section-heading product-heading"><div><p class="eyebrow">CURATED FOR YOU</p><h2 id="productTitle">Popular picks</h2><p class="muted" id="resultCount">Thoughtful pieces. Everyday prices.</p></div><div class="sort-wrap"><label for="sortSelect">Sort by</label><select id="sortSelect"><option value="featured">Recommended</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="rating">Customer Rating</option><option value="newest">Newest</option></select></div></div>
+      <div class="shop-layout">
+        <aside class="filters">
+          <div class="filter-top"><b>Filters</b><button id="clearFilters">Clear all</button></div>
+          <div class="filter-group"><h4>Category</h4><label><input type="checkbox" class="cat-filter" value="living-room"> Living Room</label><label><input type="checkbox" class="cat-filter" value="bedroom"> Bedroom</label><label><input type="checkbox" class="cat-filter" value="dining-kitchen"> Dining & Kitchen</label><label><input type="checkbox" class="cat-filter" value="office-decor"> Office & Decor</label></div>
+          <div class="filter-group"><h4>Price range</h4><div class="price-inputs"><input type="number" id="minPrice" placeholder="Min ₹" min="0"><input type="number" id="maxPrice" placeholder="Max ₹" min="0"></div><button class="apply-btn" id="applyPrice">Apply</button></div>
+          <div class="filter-group"><h4>Material</h4><label><input type="checkbox" class="material-filter" value="Wood"> Wood</label><label><input type="checkbox" class="material-filter" value="Fabric"> Fabric</label><label><input type="checkbox" class="material-filter" value="Metal"> Metal</label><label><input type="checkbox" class="material-filter" value="Engineered Wood"> Engineered Wood</label></div>
+          <div class="filter-group"><h4>Customer rating</h4><label><input type="checkbox" id="ratingFilter"> 4★ & above</label></div>
+        </aside>
+        <div class="product-area"><div class="active-filters" id="activeFilters"></div><div class="product-grid" id="productGrid"></div><div class="empty-state hidden" id="emptyState">No products found. Try changing your search or filters.</div></div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">THE HOMEmART EDIT</p><h2>Good things for your home,<br>straight to your inbox.</h2><p>Get new arrivals, styling ideas and exclusive offers.</p></div>
+      <form id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Enter your email address" required><button class="primary-btn">Subscribe</button></form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><a class="brand" href="#"><span class="brand-mark">⌂</span><span>Home<span class="brand-accent">Mart</span><small>FURNITURE & DECOR</small></span></a><p>Make yourself at home. Beautiful, practical furniture for the spaces that matter most.</p></div>
+    <div><b>Shop</b><a href="#" data-category="living-room">Living Room</a><a href="#" data-category="bedroom">Bedroom</a><a href="#" data-category="dining-kitchen">Dining & Kitchen</a><a href="#" data-category="office-decor">Office & Decor</a></div>
+    <div><b>Help</b><a href="#" id="footerAccount">My Account</a><a href="#" id="footerOrders">Track an order</a><a href="#" id="contactLink">Contact us</a><a href="#" id="aboutLink">About HomeMart</a></div>
+    <div><b>We accept</b><p class="payment-icons">UPI · VISA · Mastercard · COD</p><small>Secure checkout · Your details stay private</small></div>
+    <div class="copyright">© 2026 HomeMart. Demo e-commerce project. All prices in INR.</div>
+  </footer>
+
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="drawer hidden" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR BAG</p><h3>Shopping cart <span id="drawerCount">(0)</span></h3></div><button class="close-btn" data-close>×</button></div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot" id="cartFooter"></div>
+  </aside>
+  <section class="modal hidden" id="productModal" role="dialog" aria-modal="true"></section>
+  <section class="modal hidden" id="accountModal" role="dialog" aria-modal="true"></section>
+  <section class="modal hidden wide-modal" id="checkoutModal" role="dialog" aria-modal="true"></section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
